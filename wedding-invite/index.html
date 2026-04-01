@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Flipbook</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="invite-app">
+  <section class="main-stage">
+    <header class="hero">
+      <p class="eyebrow">Wedding Invitation</p>
+      <h1>Shukla & Rahul</h1>
+      <p class="subtitle">A maroon and gold flipbook paired with a clean right-side gallery of every invitation page.</p>
+    </header>
+
+    <section class="book-shell">
+      <div class="book-aura"></div>
+      <div class="book-frame">
+        <div class="book" id="book">
+
+          <!-- Page 1 -->
+          <div class="page" id="p1">
+            <img src="images/c62c3e804ac14314e8356d7d0cfadc5dXLHbotnwiEaQuv54-0.png" class="front" alt="Wedding invite cover">
+            <img src="images/c62c3e804ac14314e8356d7d0cfadc5dXLHbotnwiEaQuv54-1.png" class="back" alt="Wedding invite inside left">
+          </div>
+
+          <!-- Page 2 -->
+          <div class="page" id="p2">
+            <img src="images/c62c3e804ac14314e8356d7d0cfadc5dXLHbotnwiEaQuv54-2.png" class="front" alt="Wedding invite inside right">
+            <img src="images/c62c3e804ac14314e8356d7d0cfadc5dXLHbotnwiEaQuv54-3.png" class="back" alt="Wedding invite back cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="controls">
+      <button id="prevButton" type="button" onclick="prevPage()">Back</button>
+      <span class="page-indicator" id="pageIndicator">Page 1 of 4</span>
+      <button id="nextButton" type="button" onclick="nextPage()">Next</button>
+    </div>
+  </section>
+
+  <aside class="preview-panel" aria-label="Invitation page gallery">
+    <p class="panel-kicker">Right-Side Gallery</p>
+    <h2>All Invitation Images</h2>
+
+    <div class="preview-list">
+      <figure class="preview-card">
+        <img src="images/c62c3e804ac14314e8356d7d0cfadc5dXLHbotnwiEaQuv54-0.png" alt="Cover page preview">
+        <figcaption>Cover Page</figcaption>
+      </figure>
+
+      <figure class="preview-card">
+        <img src="images/c62c3e804ac14314e8356d7d0cfadc5dXLHbotnwiEaQuv54-1.png" alt="Invitation details preview">
+        <figcaption>Invitation Details</figcaption>
+      </figure>
+
+      <figure class="preview-card">
+        <img src="images/c62c3e804ac14314e8356d7d0cfadc5dXLHbotnwiEaQuv54-2.png" alt="Ceremony page preview">
+        <figcaption>Ceremony Page</figcaption>
+      </figure>
+
+      <figure class="preview-card">
+        <img src="images/c62c3e804ac14314e8356d7d0cfadc5dXLHbotnwiEaQuv54-3.png" alt="Back page preview">
+        <figcaption>Back Page</figcaption>
+      </figure>
+    </div>
+  </aside>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
